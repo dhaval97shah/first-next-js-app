@@ -1,0 +1,27 @@
+"use client";
+import Link from "next/link";
+import { FOOTER_LINKS } from "../consts/FOOTER_LINKS";
+
+const FooterLinks = () => {
+  return (
+    <div className="mt-24 grid text-center lg:mb-0 lg:grid-cols-4 gap-2 lg:text-left">
+      {FOOTER_LINKS.map(
+        (item: { title: string; description: string; link: string }) => (
+          <Link
+            href={item.link}
+            className="text-white hover:text-black group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-300 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 transition ease-in-out duration-300"
+            rel="noopener noreferrer"
+            key={item.title}
+          >
+            <h2 className="mb-3 text-2xl font-semibold">{item.title}</h2>
+            <p className="m-0 max-w-[30ch] text-sm opacity-50">
+              {item.description}
+            </p>
+          </Link>
+        )
+      )}
+    </div>
+  );
+};
+
+export default FooterLinks;
