@@ -122,6 +122,7 @@ export default function Projects() {
               {project.images.map((image: string, index: number) => (
                 <li key={index}>
                   <Image
+                    alt="project-image"
                     src={image}
                     width={80}
                     height={80}
