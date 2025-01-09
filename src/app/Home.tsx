@@ -17,9 +17,9 @@ const Wrapper = styled.div`
 
 export default function Home() {
   return (
-    <Wrapper className="flex min-h-screen flex-col items-center justify-between p-24 pb-16 bg-[#000] relative main-page">
+    <Wrapper className="flex min-h-screen flex-col items-center justify-between p-24 pt-20 pb-16 relative main-page">
       <div className="w-full items-center justify-between font-mono text-sm">
-        <div className="flex lg:flex-row flex-col items-start justify-between w-full gap-3">
+        <div className="flex lg:flex-row flex-col items-start justify-between w-[96%] gap-3">
           <AboutMe />
           <SkillsAnimatedList />
         </div>

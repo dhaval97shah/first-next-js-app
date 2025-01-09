@@ -38,7 +38,7 @@ const ProjectSlider = () => {
       <div className="text-center mb-16">
         <Link
           href="/projects"
-          className="text-white text-5xl font-bold uppercase projects-heading relative hover:opacity-90 transition ease-in-out duratio-300"
+          className="title text-white text-5xl font-bold uppercase projects-heading relative hover:opacity-90 transition ease-in-out duratio-300"
         >
           Projects
         </Link>
@@ -120,7 +120,9 @@ export const Card = React.memo(function (props: any) {
       />
       <div className="absolute bottom-0 left-0 right-0 m-auto w-full h-full flex justify-center">
         <div className="flex justify-center items-center bg-[rgba(0,0,0,0.7)] w-full rounded-lg opacity-0 group-hover:opacity-100 transition ease-in-out duration-300">
-          <div className="text-white text-5xl font-medium">{title}</div>
+          <div className="text-white text-5xl font-medium skill-font">
+            {title}
+          </div>
         </div>
       </div>
     </div>

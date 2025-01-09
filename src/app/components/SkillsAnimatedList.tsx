@@ -36,23 +36,28 @@ const SkillsAnimatedList = () => {
   );
 
   return (
-    <div /* className="fixed right-10" */>
+    <div /* className="fixed right-10" */ className="-mt-8">
       {skills.map((item: { title: string }) => (
         <animated.div
-          className="text-[#4c5564] lg:text-6xl text-3xl font-bold mb-2"
+          className="text-[#c8ccd0] lg:text-6xl text-3xl mb-2 title2 w-fit"
           key={item.title}
         >
-          {item.title}
+          {item.title} <hr />
         </animated.div>
       ))}
-      <div className="mt-8">
+      <div className="mt-12 ml-4">
         {transitions((style: any, item: any, t: any, index: any) => (
           <animated.div
-            className="text-[#4c5564] lg:text-3xl text-3xl font-bold lg:mt-2 mt-1"
+            className="text-[#fff] lg:text-xl text-3xl font-bold lg:mt-2 mt-1"
             style={{ zIndex: subSkills.length - index, ...style }}
             key={item.title}
           >
-            {item.title}
+            {item.title?.split(" ")?.map((i: string) => (
+              <>
+                <span className="skill-font">{i}</span>
+                <span>&nbsp;&nbsp;</span>
+              </>
+            ))}
           </animated.div>
         ))}
       </div>

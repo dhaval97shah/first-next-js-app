@@ -1,10 +1,10 @@
 export const SKILLS = [
   {
-    title: "REACT JS",
+    title: "React Js",
     height: 50,
   },
   {
-    title: "REACT NATIVE",
+    title: "React Native",
     height: 50,
   },
 ];
@@ -19,11 +19,11 @@ export const SUB_SKILLS = [
     height: 20,
   },
   {
-    title: "CSS | TAILWIND CSS | BOOTSTRAP",
+    title: "CSS & TAILWIND CSS & BOOTSTRAP",
     height: 20,
   },
   {
-    title: "MATERIAL UI | ANTD | NATIVEBASE",
+    title: "MATERIAL UI & ANTD & NATIVEBASE",
     height: 20,
   },
   {
@@ -31,11 +31,11 @@ export const SUB_SKILLS = [
     height: 20,
   },
   {
-    title: "REDUX | REDUX TOOLKIT",
+    title: "REDUX & REDUX TOOLKIT",
     height: 20,
   },
   {
-    title: "REACT HOOKS | REACT CONTEXT",
+    title: "REACT HOOKS & REACT CONTEXT",
     height: 20,
   },
   {
@@ -43,11 +43,11 @@ export const SUB_SKILLS = [
     height: 20,
   },
   {
-    title: "REACT QUERY",
+    title: "REACT_QUERY",
     height: 20,
   },
   {
-    title: "OFFLINE APPS | SQLITE",
+    title: "OFFLINE APPS & SQLITE",
     height: 20,
   },
 ];

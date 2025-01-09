@@ -16,7 +16,7 @@ html {
   height: 100%;
   width: 100%;
   overflow: auto;
-  background-color: #000 !important;
+  background-color: #fff !important;
 }
 
 .main-page {
@@ -41,17 +41,74 @@ html {
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: #05051f;
+    --background-end-rgb: #11112a;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(to bottom right, #040420, #814180); */
+  background: linear-gradient(-145deg, #040420 35%, #814180 90%, #040420 100%);
+}
+
+.home {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  );
+}
+
+@font-face {
+  font-family: "Lobster-Regular"; /*Can be any text*/
+  src: local("Lobster-Regular"),
+    url("./src/app/fonts/Lobster-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OleoScript-Regular"; /*Can be any text*/
+  src: local("OleoScript-Regular"),
+    url("./src/app/fonts/OleoScript-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PlaywriteAUSAGuides-Regular"; /*Can be any text*/
+  src: local("PlaywriteAUSAGuides-Regular"),
+    url("./src/app/fonts/PlaywriteAUSAGuides-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "EduAUVICWANTArrows-VariableFont_wght"; /*Can be any text*/
+  src: local("EduAUVICWANTArrows-VariableFont_wght"),
+    url("./src/app/fonts/EduAUVICWANTArrows-VariableFont_wght.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Sixtyfour-Regular"; /*Can be any text*/
+  src: local("Sixtyfour-Regular"),
+    url("./src/app/fonts/Sixtyfour-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CormorantGaramond-Regular"; /*Can be any text*/
+  src: local("CormorantGaramond-Regular"),
+    url("./src/app/fonts/CormorantGaramond-Regular.ttf") format("truetype");
+}
+
+.title {
+  font-family: "OleoScript-Regular" !important;
+}
+
+.Sixtyfour {
+  font-family: "Sixtyfour-Regular" !important;
+}
+.description {
+  font-family: "CormorantGaramond-Regular" !important;
+}
+.title2 {
+  font-family: "Lobster-Regular" !important;
+}
+.line-font {
+  font-family: "PlaywriteAUSAGuides-Regular" !important;
+}
+
+.skill-font {
+  font-family: "EduAUVICWANTArrows-VariableFont_wght" !important;
 }
